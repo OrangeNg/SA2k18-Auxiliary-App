@@ -10,6 +10,7 @@
 
     <Button
         android:id="@+id/add_food"
+        android:onClick="onAddFoodClicked"
         android:background="#BF76ff03"
         android:text="Add&#10; food&#10; items"
         android:textColor="#000000"
