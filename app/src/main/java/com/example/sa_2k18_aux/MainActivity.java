@@ -1,5 +1,6 @@
 package com.example.sa_2k18_aux;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onInputHealthClicked(View view){
-
+        Intent intent = new Intent(this,InputHealthActivity.class);
+        startActivity(intent);
     }
 
     public void onOpenFridgeClicked(View view){
@@ -48,11 +50,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onDoctorCommentsClicked(View view){
-
+        Intent intent = new Intent(this, DoctorCommentsActivity.class);
+        startActivity(intent);
     }
 
     public void onHelpClicked(View view){
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Click on the buttons to simulate signals sent to smart fridge!")
+                .setTitle("Help");
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
 }

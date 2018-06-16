@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputHealthActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter values of health vitals: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/body_temp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body Temperature"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/pulse_rate"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pulserate (In BPM)"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/blood_pressure"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood Pressure (mmHg)"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="onBackClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Back"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onInputClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Input"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RemoveFoodActivity" />
-        <activity android:name=".AddFoodActivity"></activity>
+        <activity android:name=".AddFoodActivity" />
+        <activity android:name=".DoctorCommentsActivity" />
+        <activity android:name=".InputHealthActivity"></activity>
     </application>
 
 </manifest>
