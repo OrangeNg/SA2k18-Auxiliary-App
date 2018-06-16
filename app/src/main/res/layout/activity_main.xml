@@ -25,6 +25,7 @@
 
     <Button
         android:id="@+id/move_past"
+        android:onClick="onMovePastClicked"
         android:background="#BF76ff03"
         android:text="Move&#10; past&#10; fridge"
         android:textColor="#000000"
@@ -38,6 +39,7 @@
 
     <Button
         android:id="@+id/remove_food"
+        android:onClick="onRemoveFoodClicked"
         android:background="#BF76ff03"
         android:text="Remove&#10; food&#10; items"
         android:textColor="#000000"
@@ -65,6 +67,7 @@
 
     <Button
         android:id="@+id/input_health"
+        android:onClick="onInputHealthClicked"
         android:background="#BF304ffe"
         android:text="Input&#10; Health&#10; Info"
         android:layout_width="0dp"
@@ -78,6 +81,7 @@
 
     <Button
         android:id="@+id/open_fridge"
+        android:onClick="onOpenFridgeClicked"
         android:background="#BF304ffe"
         android:text="Open&#10; Fridge"
         android:layout_width="0dp"
@@ -91,6 +95,7 @@
 
     <Button
         android:id="@+id/remove_medication"
+        android:onClick="onRemoveMedicationClicked"
         android:background="#BF304ffe"
         android:text="Remove&#10; Medication"
         android:layout_width="0dp"
@@ -111,6 +116,7 @@
 
     <Button
         android:text="Doctor's Comments"
+        android:onClick="onDoctorCommentsClicked"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="10dp"
@@ -121,6 +127,7 @@
 
     <Button
         android:text="Help"
+        android:onClick="onHelpClicked"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="10dp"
