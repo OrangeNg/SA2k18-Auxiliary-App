@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "42480789943",
+    "firebase_url": "https://sa2k18-auxiliary-app.firebaseio.com",
+    "project_id": "sa2k18-auxiliary-app",
+    "storage_bucket": "sa2k18-auxiliary-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42480789943:android:aa2b775c79ff1b09",
+        "android_client_info": {
+          "package_name": "com.example.sa_2k18_aux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42480789943-ra0m02o2t6aupoqsha03u526u6u7kev8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "42480789943-ra0m02o2t6aupoqsha03u526u6u7kev8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcr6QBQPEn_ZUIX2h_FNX7RZbEN1H_J-U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
