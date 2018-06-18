@@ -89,24 +89,30 @@
         android:layout_height="0dp"
         android:layout_margin="10dp"
         android:padding="10dp"
-        app:layout_constraintRight_toLeftOf="@id/remove_medication"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@id/input_health"
         app:layout_constraintTop_toTopOf="@id/top_line"
         app:layout_constraintBottom_toBottomOf="@id/bottom_line"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69"/>
 
     <Button
         android:id="@+id/remove_medication"
         android:onClick="onRemoveMedicationClicked"
         android:background="#BF304ffe"
         android:text="Remove&#10; Medication"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="10dp"
         android:padding="10dp"
-        app:layout_constraintLeft_toRightOf="@id/fridge_door"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/top_line"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_line"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottom_line"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_line_2"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/baseline"
@@ -116,8 +122,8 @@
         app:layout_constraintGuide_percent="0.85"/>
 
     <Button
-        android:text="Doctor's Comments"
-        android:onClick="onDoctorCommentsClicked"
+        android:text="Doctor's Panel"
+        android:onClick="onDoctorPanelClicked"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="10dp"
