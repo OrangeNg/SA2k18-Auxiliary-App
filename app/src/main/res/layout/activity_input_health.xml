@@ -35,11 +35,20 @@
         android:padding="10dp"/>
 
     <EditText
-        android:id="@+id/blood_pressure"
+        android:id="@+id/systolic_blood_pressure"
         android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Blood Pressure (mmHg)"
+        android:hint="Systolic Blood Pressure (mmHg)"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/diastolic_blood_pressure"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Diastolic Blood Pressure (mmHg)"
         android:layout_margin="10dp"
         android:padding="10dp"/>
 
