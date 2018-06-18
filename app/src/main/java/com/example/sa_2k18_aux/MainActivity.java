@@ -2,24 +2,30 @@ package com.example.sa_2k18_aux;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference dbRef = database.getReference();
+    private boolean fridgeOpen = false;
+
+    private Button fridgeDoor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fridgeDoor = findViewById(R.id.fridge_door);
+
+        dbRef.child("fridge_open").setValue(false);
     }
 
     public void onAddFoodClicked(View view){
@@ -41,8 +47,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onOpenFridgeClicked(View view){
-        dbRef.child("open_fridge").setValue(true);
+    public void onFridgeDoorClicked(View view){
+        if(fridgeOpen){
+            dbRef.child("fridge_open").setValue("false");
+            fridgeOpen = false;
+            fridgeDoor.setText("Open Fridge");
+            fridgeDoor.setTextColor(Color.parseColor("#000000"));
+            fridgeDoor.setBackgroundColor(Color.parseColor("#BF76FF03"));
+        }
+        else{
+            dbRef.child("fridge_open").setValue("true");
+            fridgeOpen = true;
+            fridgeDoor.setText("Close Fridge");
+            fridgeDoor.setTextColor(Color.parseColor("#FFFFFF"));
+            fridgeDoor.setBackgroundColor(Color.parseColor("#BFD50000"));
+        }
     }
 
     public void onRemoveMedicationClicked(View view){
