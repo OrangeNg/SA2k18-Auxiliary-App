@@ -19,7 +19,8 @@
         <activity android:name=".RemoveFoodActivity" />
         <activity android:name=".AddFoodActivity" />
         <activity android:name=".DoctorPanelActivity" />
-        <activity android:name=".InputHealthActivity"></activity>
+        <activity android:name=".InputHealthActivity" />
+        <activity android:name=".MedicationActivity"></activity>
     </application>
 
 </manifest>

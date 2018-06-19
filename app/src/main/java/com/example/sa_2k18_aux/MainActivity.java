@@ -64,8 +64,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onRemoveMedicationClicked(View view){
-        dbRef.child("remove_medication").setValue(true);
+    public void onMedicationClicked(View view){
+        Intent intent = new Intent(this, MedicationActivity.class);
+        startActivity(intent);
     }
 
     public void onDoctorPanelClicked(View view){

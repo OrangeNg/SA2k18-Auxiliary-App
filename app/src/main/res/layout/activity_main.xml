@@ -102,10 +102,10 @@
         app:layout_constraintGuide_percent="0.69"/>
 
     <Button
-        android:id="@+id/remove_medication"
-        android:onClick="onRemoveMedicationClicked"
+        android:id="@+id/medication"
+        android:onClick="onMedicationClicked"
         android:background="#BF304ffe"
-        android:text="Remove&#10; Medication"
+        android:text="Medication"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="10dp"
